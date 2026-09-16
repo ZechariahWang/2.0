@@ -24,7 +24,8 @@ export default function Home() {
 
       <footer className="mt-20 flex gap-4 border-t border-border pt-6 text-muted">
         <a href={githubUrl} target="_blank" rel="noreferrer" className="hover:text-foreground">github</a>
-        <a href={`mailto:${email}`} className="hover:text-foreground">email</a>
+        <a href={`mailto:${email}`} className="hover:text-foreground">email</a> 
+        {/* test */}
       </footer>
     </main>
   );
