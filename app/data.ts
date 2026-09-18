@@ -38,12 +38,20 @@ export const skills: { label: string; items: string[] }[] = [
 
 export const experiences: Experience[] = [
   {
-    role: "robotics ml engineering intern",
+    role: "robotics software engineering intern",
     company: "robim technologies",
     period: "may 2026 - aug 2026",
     location: "edmonton, ab",
     summary: "robots for prefabrication.",
-    skills: ["yolo", "pytorch", "llm"],
+    skills: ["yolo", "pytorch", "docker", "ros2"],
+  },
+  {
+    role: "robotics ml engineer",
+    company: "wat.ai",
+    period: "may 2026 - present",
+    location: "waterloo, on",
+    summary: "world models and vlas.",
+    skills: ["mujoco", "pytorch", "gymnasium"],
   },
   {
     role: "software engineer intern",
