@@ -11,7 +11,7 @@ export default function About() {
           </p>
         ))}
       </div>
-      <div>
+      {/* <div>
         {skills.map((entry) => (
           <div
             key={entry.label}
@@ -21,7 +21,7 @@ export default function About() {
             <span>{entry.items.join(", ")}</span>
           </div>
         ))}
-      </div>
+      </div> */}
     </section>
   );
 }
