@@ -86,14 +86,6 @@ export const experiences: Experience[] = [
     skills: [".net", "wpf", "moq", "nunit"],
   },
   {
-    role: "principal software engineer",
-    company: "210z robotics",
-    period: "sept 2019 - aug 2024",
-    location: "calgary, ab",
-    summary: "alberta #1 competitive robotics team.",
-    skills: ["ros2", "gazebo", "mongodb", "pros"],
-  },
-  {
     role: "research engineer intern",
     company: "university of calgary",
     period: "jan 2023 - mar 2023",
@@ -101,22 +93,29 @@ export const experiences: Experience[] = [
     summary: "computer imaging of mfts and flocculent polymers.",
     skills: ["python", "matplotlib", "pandas", "opencv"],
   },
+  {
+    role: "principal software engineer",
+    company: "210z robotics",
+    period: "sept 2019 - aug 2024",
+    location: "calgary, ab",
+    summary: "alberta #1 competitive robotics team.",
+    skills: ["ros2", "gazebo", "mongodb", "pros"],
+  },
 ];
 
 export const projects: Project[] = [
   {
     id: "reflex",
     title: "reflex ai",
-    tagline: "Hack the North 2026 Winner.",
+    tagline: "hack the north 2026 winner.",
     category: "robotics",
-    technologies: ["ros2", "gazebo"],
+    technologies: ["ros2", "gazebo", "mcp"],
     image: "/projects/reflex.jpg",
     paragraphs: [
-      "I developed the first version of an unmanned ground vehicle, Argus, that was acquired by Exia Labs (a16z). The platform was built on a Suzuki King Quad 450 base, and fuses a Velodyne VLP-32C LiDAR and camera to map its surroundings and navigate to user-defined waypoints. Steering, braking, and throttle are all handled by custom-printed and machined parts purpose-built for the vehicle.",
-      "The software stack utilizes ROS2, Gazebo, and Foxglove on a Nvidia Jetson running Ubuntu 22.04 with a full sensor package (3D LiDAR, depth camera, IMU, radio, encoders) incorporated with Anduril Lattice and TAK.",
-      "For autonomous path-planning, the ATV utilizes a custom waypoint algorithm called CHAR, paired with a local A* dynamic algorithm for path generation. From there, the ATV uses Pure Pursuit to navigate to target coordinates (lat, long) given any C2 software.",
-      "I was invited to test the vehicle with the 2nd Cavalry Regiment on Rose Barracks during March 2026 in Germany, and raised $25,000 USD within two weeks. During this time, I lived between Nuremberg and Munich for 1 month while working with Rose Barracks and the 2nd Cavalry Regiment in Vilseck to showcase the vehicle.",
-      "Argus 2.0 is now built on a Polaris and available for commercial purchase in the U.S. and Germany. I worked on the initial software for 2.0, before leaving Exia in April after winter 2026.",
+      "Right now, humans write skills for AI. We asked: why can't AI write skills for humans? Reflex is a wearable exoskeleton gauntlet, controlled by AI, that assists humans with dexterous manipulation. Whether you're paralyzed, trying to learn a new skill, or your hands are just worn out after hours on an assembly line, Reflex steps in and moves your fingers for you.",
+      "The hardware is a 3D-printed 5 DOF exoskeleton powered by STS3215 servos, with a RealSense D435i depth camera mounted on the gauntlet and an iPhone overhead camera for an egocentric view. The fingers use RCM four-bar linkages adapted from Sony CSL's research, so all actuation force stays normal to the finger for safety.",
+      "A depth-based grasp policy, fine-tuned from SmolVLA, recognizes what you're reaching for and how to grip it. The policy was trained entirely in simulation using demonstrations collected via MediaPipe hand tracking. Claude connects straight to your hand through MCP: it reads finger state, commands servos, and writes, runs, or edits skills.",
+      "One of our favorite demos was using Reflex and Claude to teach someone piano who'd never played before, guiding their fingers note by note.",
     ],
     githubUrl: "",
     liveUrl: "",

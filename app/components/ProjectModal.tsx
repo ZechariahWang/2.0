@@ -48,15 +48,14 @@ export default function ProjectModal({
           </div>
           <p className="text-muted">{project.tagline}</p>
 
-          <div className="relative my-4 aspect-video border border-border">
-            <Image
-              src={project.image}
-              alt={project.title}
-              fill
-              sizes="(max-width: 640px) 92vw, 640px"
-              className="object-cover"
-            />
-          </div>
+          <Image
+            src={project.image}
+            alt={project.title}
+            width={1280}
+            height={720}
+            sizes="(max-width: 640px) 92vw, 640px"
+            className="my-4 h-auto w-full border border-border"
+          />
 
           {project.paragraphs.map((paragraph, i) => (
             <p key={i} className="mb-3">
