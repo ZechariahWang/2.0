@@ -25,8 +25,8 @@ export const githubUrl = "https://github.com/ZechariahWang";
 export const email = "zechariahwang@gmail.com";
 
 export const about = [
-  "i started at 210 as the software team lead for 6+ years, and qualified for the world championships 7x. i then built an autonomous ugv for the u.s. army and secured $25,000 in funding within two weeks.",
-  "i now attend the university of waterloo for mechatronics engineering, and am currently working at robim this summer on robots for prefabrication.",
+  "i started at 210z as the software team lead for 6+ years, and qualified for the vex world championships 7x. i then built an autonomous ugv for the u.s. army and secured $25,000 in funding within two weeks.",
+  "i now attend the university of waterloo for mechatronics engineering.",
 ];
 
 export const skills: { label: string; items: string[] }[] = [
@@ -55,7 +55,7 @@ export const experiences: Experience[] = [
   },
   {
     role: "software engineer intern",
-    company: "exia labs",
+    company: "exia labs (a16z)",
     period: "jan 2026 - apr 2026",
     location: "los angeles, ca",
     summary: "autonomous ground vehicles for defense.",
@@ -104,6 +104,23 @@ export const experiences: Experience[] = [
 ];
 
 export const projects: Project[] = [
+  {
+    id: "reflex",
+    title: "reflex ai",
+    tagline: "Hack the North 2026 Winner.",
+    category: "robotics",
+    technologies: ["ros2", "gazebo"],
+    image: "/projects/reflex.jpg",
+    paragraphs: [
+      "I developed the first version of an unmanned ground vehicle, Argus, that was acquired by Exia Labs (a16z). The platform was built on a Suzuki King Quad 450 base, and fuses a Velodyne VLP-32C LiDAR and camera to map its surroundings and navigate to user-defined waypoints. Steering, braking, and throttle are all handled by custom-printed and machined parts purpose-built for the vehicle.",
+      "The software stack utilizes ROS2, Gazebo, and Foxglove on a Nvidia Jetson running Ubuntu 22.04 with a full sensor package (3D LiDAR, depth camera, IMU, radio, encoders) incorporated with Anduril Lattice and TAK.",
+      "For autonomous path-planning, the ATV utilizes a custom waypoint algorithm called CHAR, paired with a local A* dynamic algorithm for path generation. From there, the ATV uses Pure Pursuit to navigate to target coordinates (lat, long) given any C2 software.",
+      "I was invited to test the vehicle with the 2nd Cavalry Regiment on Rose Barracks during March 2026 in Germany, and raised $25,000 USD within two weeks. During this time, I lived between Nuremberg and Munich for 1 month while working with Rose Barracks and the 2nd Cavalry Regiment in Vilseck to showcase the vehicle.",
+      "Argus 2.0 is now built on a Polaris and available for commercial purchase in the U.S. and Germany. I worked on the initial software for 2.0, before leaving Exia in April after winter 2026.",
+    ],
+    githubUrl: "",
+    liveUrl: "",
+  },
   {
     id: "argus",
     title: "argus ugv",
