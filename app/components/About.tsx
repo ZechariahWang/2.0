@@ -4,7 +4,7 @@ export default function About() {
   return (
     <section id="about" className="mb-16">
       <h2 className="mb-6 text-muted">{"// about"}</h2>
-      <div className="max-w-prose">
+      <div className="max-w-[70ch]">
         {about.map((paragraph) => (
           <p key={paragraph} className="mb-4">
             {paragraph}
