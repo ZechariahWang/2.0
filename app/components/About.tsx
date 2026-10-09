@@ -12,7 +12,7 @@ export default function About() {
         ))}
       </div>
       {/* <div>
-        {skills.map((entry) => (
+        {skills.map((entry) => ( hi
           <div
             key={entry.label}
             className="flex border-b border-border py-2"
