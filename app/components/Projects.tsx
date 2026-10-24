@@ -9,19 +9,21 @@ export default function Projects() {
 
   return (
     <section id="projects" className="mb-16">
-      <h2 className="mb-6 text-muted">{"// projects"}</h2>
+      <h2 className="mb-6 text-muted">projects</h2>
       {projects.map((project) => (
         <button
           key={project.id}
           type="button"
           onClick={() => setSelected(project)}
-          className="flex w-full items-baseline justify-between gap-4 border-b border-border py-4 text-left last:border-0"
+          className="group w-full border-b border-border py-4 text-left last:border-0"
         >
-          <div>
-            <p className="text-foreground hover:underline">{project.title}</p>
-            <p className="text-muted">{project.tagline}</p>
+          <p className="text-foreground group-hover:underline">{project.title}</p>
+          <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 group-hover:grid-rows-[1fr]">
+            <div className="overflow-hidden">
+              <p className="text-muted">{project.tagline}</p>
+              <p className="text-xs text-muted">{project.category}</p>
+            </div>
           </div>
-          <span className="shrink-0 text-xs text-muted">{project.category}</span>
         </button>
       ))}
       <ProjectModal project={selected} onClose={() => setSelected(null)} />

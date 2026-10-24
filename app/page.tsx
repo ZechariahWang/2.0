@@ -11,11 +11,11 @@ export default function Home() {
           <h1 className="text-base font-medium">{name}</h1>
           <p className="text-muted">{tagline}</p>
         </div>
-        <nav className="flex gap-4 text-muted">
+        {/* <nav className="flex gap-4 text-muted">
           <a href="#about" className="hover:text-foreground">about</a>
           <a href="#experience" className="hover:text-foreground">experience</a>
           <a href="#projects" className="hover:text-foreground">projects</a>
-        </nav>
+        </nav> */}
       </header>
 
       <About />

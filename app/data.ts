@@ -20,13 +20,18 @@ export type Project = {
 };
 
 export const name = "zechariah wang";
-export const tagline = "mechatronics engineering @ uwaterloo";
+export const tagline = "";
 export const githubUrl = "https://github.com/ZechariahWang";
 export const email = "zechariahwang@gmail.com";
 
+// export const about = [
+//   "i started at 210z as the software team lead for 6+ years, and qualified for the vex world championships 7x. i then built an autonomous ugv for the u.s. army and secured $25,000 in funding within two weeks.",
+//   "i now attend the university of waterloo for mechatronics engineering.",
+// ];
+
 export const about = [
-  "i started at 210z as the software team lead for 6+ years, and qualified for the vex world championships 7x. i then built an autonomous ugv for the u.s. army and secured $25,000 in funding within two weeks.",
-  "i now attend the university of waterloo for mechatronics engineering.",
+  // "i started at 210z as the software team lead for 6+ years, and qualified for the vex world championships 7x. i then built an autonomous ugv for the u.s. army and secured $25,000 in funding within two weeks.",
+  "i study mechatronics engineering at the university of waterloo.",
 ];
 
 export const skills: { label: string; items: string[] }[] = [
