@@ -18,7 +18,7 @@ export default function Projects() {
           className="group w-full border-b border-border py-4 text-left last:border-0"
         >
           <p className="text-foreground group-hover:underline">{project.title}</p>
-          <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 group-hover:grid-rows-[1fr]">
+          <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 group-hover:grid-rows-[1fr] group-hover:delay-150">
             <div className="overflow-hidden">
               <p className="text-muted">{project.tagline}</p>
               <p className="text-xs text-muted">{project.category}</p>

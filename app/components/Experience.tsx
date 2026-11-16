@@ -11,7 +11,7 @@ export default function Experience() {
               <span className="text-foreground">{exp.company}</span>
               <span className="shrink-0 text-muted tabular-nums">{exp.period}</span>
             </div>
-            <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 group-hover:grid-rows-[1fr]">
+            <div className="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 group-hover:grid-rows-[1fr] group-hover:delay-150">
               <div className="overflow-hidden">
                 <div className="text-muted">
                   {exp.role} / {exp.location}
