@@ -36,7 +36,7 @@ export default function ProjectModal({
       {project && (
         <div>
           <div className="flex items-baseline justify-between gap-4">
-            <h3 className="text-foreground">{project.title}</h3>
+            <h3 className="font-display text-2xl text-accent">{project.title}</h3>
             <button
               type="button"
               aria-label="close"

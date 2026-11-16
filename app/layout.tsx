@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { DM_Sans, Lora } from "next/font/google";
 import "./globals.css";
 
-const geist = Geist({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-geist",
+  variable: "--font-dm-sans",
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  variable: "--font-lora",
 });
 
 export const metadata: Metadata = {
@@ -15,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${geist.variable} antialiased`}>
+    <html lang="en" className={`${dmSans.variable} ${lora.variable} antialiased`}>
       <body>{children}</body>
     </html>
   );
