@@ -22,7 +22,9 @@ export type Project = {
 export const name = "zechariah wang";
 export const tagline = "";
 export const githubUrl = "https://github.com/ZechariahWang";
-export const email = "zechariahwang@gmail.com";
+export const linkedinUrl = "https://www.linkedin.com/in/zechariah-wang/";
+export const youtubeUrl = "https://www.youtube.com/@zechariah1204";
+export const email ="zechariahwang@gmail.com";
 
 // export const about = [
 //   "i started at 210z as the software team lead for 6+ years, and qualified for the vex world championships 7x. i then built an autonomous ugv for the u.s. army and secured $25,000 in funding within two weeks.",
@@ -30,8 +32,10 @@ export const email = "zechariahwang@gmail.com";
 // ];
 
 export const about = [
-  // "i started at 210z as the software team lead for 6+ years, and qualified for the vex world championships 7x. i then built an autonomous ugv for the u.s. army and secured $25,000 in funding within two weeks.",
-  "i study mechatronics engineering at the university of waterloo.",
+  "im a 2b mechatronics student at waterloo. currently on wat.ai as an ml engineer, developing deployment models for cloth and deformation systems. most recently i was at robim, a robotics startup where i built the entire robotics ai vision pipline from scratch.",
+  "since vex, ive had a love for robotics and software engineering. i started in controls, but since then ive expanded into everything robotics related, from ml to deployment. ",
+  "outside of robotics, i love to play basketball, or run a game of siege. my goal is to make a lasting impact in the world and on those around me through my work and everything i do. ",
+  "- zechariah wang (11/17/2027)",
 ];
 
 export const skills: { label: string; items: string[] }[] = [
@@ -59,15 +63,15 @@ export const experiences: Experience[] = [
     skills: ["mujoco", "pytorch", "gymnasium"],
   },
   {
-    role: "software engineer intern",
+    role: "robotics software engineer",
     company: "exia labs (a16z)",
     period: "jan 2026 - apr 2026",
     location: "los angeles, ca",
-    summary: "autonomous ground vehicles for defense.",
+    summary: "autonomous ugvs. joined team after initial atv acquisition.",
     skills: ["ros2", "linux", "tak"],
   },
   {
-    role: "software engineer intern",
+    role: "AI engineer intern",
     company: "twos conversation",
     period: "sept 2025 - dec 2025",
     location: "new york, ny",
@@ -83,7 +87,7 @@ export const experiences: Experience[] = [
     skills: ["docker", "ros2", "linux", "foxglove"],
   },
   {
-    role: "software engineer intern",
+    role: "r&d software engineer intern",
     company: "conavi medical",
     period: "jan 2025 - apr 2025",
     location: "toronto, on",
@@ -99,7 +103,7 @@ export const experiences: Experience[] = [
     skills: ["python", "matplotlib", "pandas", "opencv"],
   },
   {
-    role: "principal software engineer",
+    role: "lead robotics software engineer",
     company: "210z robotics",
     period: "sept 2019 - aug 2024",
     location: "calgary, ab",
