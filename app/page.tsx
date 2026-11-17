@@ -4,7 +4,7 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import { email, githubUrl, linkedinUrl, name, tagline, youtubeUrl } from "./data";
 
-const contactLink = "border-b border-border pb-0.5 text-sm hover:border-foreground";
+const contactLink = "whitespace-nowrap border-b border-border pb-0.5 text-sm hover:border-foreground";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
           <About />
           <div className="mt-6 flex flex-wrap gap-6">
             <a href={`mailto:${email}`} className={contactLink}>
-              {email} ↗
+              email ↗
             </a>
             <a href={githubUrl} target="_blank" rel="noreferrer" className={contactLink}>
               github ↗
