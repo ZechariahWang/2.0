@@ -33,9 +33,9 @@ export const email ="zechariahwang@gmail.com";
 
 export const about = [
   "im a 2b mechatronics student at waterloo. currently on wat.ai as an ml engineer, developing deployment models for cloth and deformation systems. most recently i was at robim, a robotics startup where i built the entire robotics ai vision pipline from scratch.",
-  "since vex, ive had a love for robotics and software engineering. i started in controls, but since then ive expanded into everything robotics related, from ml to deployment. ",
-  "outside of robotics, i love to play basketball, or run a game of siege. my goal is to make a lasting impact in the world and on those around me through my work and everything i do. ",
-  "- zechariah wang (11/17/2027)",
+  // "since vex, ive had a love for robotics and software engineering. i started in controls, but since then ive expanded into everything robotics related, from ml to deployment. ",
+  // "outside of robotics, i love to play basketball, or run a game of siege. my goal is to make a lasting impact in the world and on those around me through my work and everything i do. ",
+  // "- zechariah wang (11/17/2027)",
 ];
 
 export const skills: { label: string; items: string[] }[] = [
